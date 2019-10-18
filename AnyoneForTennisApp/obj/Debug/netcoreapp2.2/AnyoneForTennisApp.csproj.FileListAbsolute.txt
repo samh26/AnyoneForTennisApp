@@ -35,3 +35,8 @@ C:\Users\sam_h\source\repos\AnyoneForTennisApp\AnyoneForTennisApp\obj\Debug\netc
 C:\Users\sam_h\source\repos\AnyoneForTennisApp\AnyoneForTennisApp\obj\Debug\netcoreapp2.2\Razor\Views\Coaches\Details.g.cshtml.cs
 C:\Users\sam_h\source\repos\AnyoneForTennisApp\AnyoneForTennisApp\obj\Debug\netcoreapp2.2\Razor\Views\Coaches\Edit.g.cshtml.cs
 C:\Users\sam_h\source\repos\AnyoneForTennisApp\AnyoneForTennisApp\obj\Debug\netcoreapp2.2\Razor\Views\Coaches\Index.g.cshtml.cs
+C:\Users\sam_h\source\repos\AnyoneForTennisApp\AnyoneForTennisApp\obj\Debug\netcoreapp2.2\Razor\Views\Schedules\Create.g.cshtml.cs
+C:\Users\sam_h\source\repos\AnyoneForTennisApp\AnyoneForTennisApp\obj\Debug\netcoreapp2.2\Razor\Views\Schedules\Delete.g.cshtml.cs
+C:\Users\sam_h\source\repos\AnyoneForTennisApp\AnyoneForTennisApp\obj\Debug\netcoreapp2.2\Razor\Views\Schedules\Details.g.cshtml.cs
+C:\Users\sam_h\source\repos\AnyoneForTennisApp\AnyoneForTennisApp\obj\Debug\netcoreapp2.2\Razor\Views\Schedules\Edit.g.cshtml.cs
+C:\Users\sam_h\source\repos\AnyoneForTennisApp\AnyoneForTennisApp\obj\Debug\netcoreapp2.2\Razor\Views\Schedules\Index.g.cshtml.cs

@@ -13,6 +13,8 @@ using Microsoft.EntityFrameworkCore;
 using AnyoneForTennisApp.Data;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.AspNetCore.Authorization;
+using AnyoneForTennisApp.Authorization;
 
 namespace AnyoneForTennisApp
 {
@@ -39,8 +41,17 @@ namespace AnyoneForTennisApp
                 options.UseSqlServer(
                     Configuration.GetConnectionString("DefaultConnection")));
             services.AddDefaultIdentity<IdentityUser>()
+                .AddRoles<IdentityRole>()
                 .AddDefaultUI(UIFramework.Bootstrap4)
                 .AddEntityFrameworkStores<ApplicationDbContext>();
+
+            services.AddAuthorization(options =>
+            {
+                options.AddPolicy("AccessPolicy", policy =>
+                    policy.Requirements.Add(new CoachAccessRequirement()));
+            });
+
+            services.AddScoped<IAuthorizationHandler, CoachAuthorizationHandler>();
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
         }
